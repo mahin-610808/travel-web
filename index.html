@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tr Travel - Find Your Perfect Stay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <nav>
+        <img src="images/logo.png" class="logo" alt="Tr Travel Logo">
+        <ul class="nav-links">
+            <li><a href="#" class="active" id="popularPlacesLink">Popular Places</a></li>
+            <li><a href="#" id="travelOutsideLink">Travel Outside</a></li>
+            <li><a href="#" id="onlinePackagesLink">Online Packages</a></li>
+            <li><a href="#" id="bookingHistoryLink">My Bookings</a></li>
+        </ul>
+        <a href="#" class="register-btn" id="registerBtn">Register Now</a>
+    </nav>
+
+    <div class="container">
+        <h1>Find Your Next Stay</h1>
+        <div class="search-bar">
+            <form id="searchForm">
+                <div class="location">
+                    <label>Location</label>
+                    <input type="text" id="locationInput" placeholder="Where are you going?" required>
+                </div>
+                <div>
+                    <label>Check in</label>
+                    <input type="date" id="checkinInput" required>
+                </div>
+                <div>
+                    <label>Check out</label>
+                    <input type="date" id="checkoutInput" required>
+                </div>
+                <div>
+                    <label>Guests</label>
+                    <select id="guestInput">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<!-- Popular Places Section -->
+<section class="container" id="popularPlacesSection">
+    <h2 class="sub-title">Popular Places</h2>
+    <div class="exclusives">
+        <div class="exclusive-item" data-place="turkey">
+            <img src="images/turkey.jpg" alt="Turkey" onerror="this.src='https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Turkey'">
+            <span>
+                    <h3>Turkey</h3>
+                    <p>Starts @ $200</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="france">
+            <img src="images/france.jpg" alt="France" onerror="this.src='https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=France'">
+            <span>
+                    <h3>France</h3>
+                    <p>Starts @ $400</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="canada">
+            <img src="images/canada.jpg" alt="Canada" onerror="this.src='https://via.placeholder.com/300x200/50C878/FFFFFF?text=Canada'">
+            <span>
+                    <h3>Canada</h3>
+                    <p>Starts @ $600</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="dubai">
+            <img src="images/dubai.jpg" alt="Dubai" onerror="this.src='https://via.placeholder.com/300x200/FFA500/FFFFFF?text=Dubai'">
+            <span>
+                    <h3>Dubai</h3>
+                    <p>Starts @ $400</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="qatar">
+            <img src="images/qatar.jpg" alt="Qatar" onerror="this.src='https://via.placeholder.com/300x200/800020/FFFFFF?text=Qatar'">
+            <span>
+                    <h3>Qatar</h3>
+                    <p>Starts @ $350</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="saudi">
+            <img src="images/saudi.jpg" alt="Saudi Arabia" onerror="this.src='https://via.placeholder.com/300x200/00563B/FFFFFF?text=Saudi+Arabia'">
+            <span>
+                    <h3>Saudi Arabia</h3>
+                    <p>Starts @ $350</p>
+                </span>
+        </div>
+    </div>
+</section>
+
+<!-- Travel Outside Section -->
+<section class="container" id="travelOutsideSection" style="display: none;">
+    <h2 class="sub-title">Travel Outside - International Destinations</h2>
+    <div class="exclusives">
+        <div class="exclusive-item" data-place="usa">
+            <img src="images/usa.jpg" alt="USA" onerror="this.src='https://via.placeholder.com/300x200/00308A/FFFFFF?text=USA'">
+            <span>
+                    <h3>United States</h3>
+                    <p>Starts @ $800</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="uk">
+            <img src="images/uk.jpg" alt="United Kingdom" onerror="this.src='https://via.placeholder.com/300x200/00247D/FFFFFF?text=UK'">
+            <span>
+                    <h3>United Kingdom</h3>
+                    <p>Starts @ $700</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="germany">
+            <img src="images/germany.jpg" alt="Germany" onerror="this.src='https://via.placeholder.com/300x200/000000/FFFFFF?text=Germany'">
+            <span>
+                    <h3>Germany</h3>
+                    <p>Starts @ $550</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="italy">
+            <img src="images/italy.jpg" alt="Italy" onerror="this.src='https://via.placeholder.com/300x200/009246/FFFFFF?text=Italy'">
+            <span>
+                    <h3>Italy</h3>
+                    <p>Starts @ $500</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="spain">
+            <img src="images/spain.jpg" alt="Spain" onerror="this.src='https://via.placeholder.com/300x200/AA151B/FFFFFF?text=Spain'">
+            <span>
+                    <h3>Spain</h3>
+                    <p>Starts @ $450</p>
+                </span>
+        </div>
+        <div class="exclusive-item" data-place="switzerland">
+            <img src="images/switzerland.jpg" alt="Switzerland" onerror="this.src='https://via.placeholder.com/300x200/D52B1E/FFFFFF?text=Switzerland'">
+            <span>
+                    <h3>Switzerland</h3>
+                    <p>Starts @ $900</p>
+                </span>
+        </div>
+    </div>
+</section>
+
+<!-- Online Packages Section -->
+<section class="container" id="onlinePackagesSection" style="display: none;">
+    <h2 class="sub-title">Online Packages - Special Deals</h2>
+    <div class="packages">
+        <div class="package-item" data-package="honeymoon">
+            <img src="images/honeymoon-package.jpg" alt="Honeymoon Package" onerror="this.src='https://via.placeholder.com/350x200/FF69B4/FFFFFF?text=Honeymoon+Package'">
+            <div class="package-info">
+                <h3>Romantic Honeymoon</h3>
+                <p>7 Days & 6 Nights</p>
+                <span class="price">$1,200</span>
+                <ul>
+                    <li>Luxury Resort Stay</li>
+                    <li>Candle Light Dinner</li>
+                    <li>Spa Couple Massage</li>
+                    <li>Private Tour Guide</li>
+                </ul>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+        <div class="package-item" data-package="family">
+            <img src="images/family-package.jpg" alt="Family Package" onerror="this.src='https://via.placeholder.com/350x200/4169E1/FFFFFF?text=Family+Package'">
+            <div class="package-info">
+                <h3>Family Vacation</h3>
+                <p>5 Days & 4 Nights</p>
+                <span class="price">$800</span>
+                <ul>
+                    <li>Family Suite Accommodation</li>
+                    <li>Kids Activities</li>
+                    <li>All Meals Included</li>
+                    <li>Theme Park Tickets</li>
+                </ul>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+        <div class="package-item" data-package="adventure">
+            <img src="images/adventure-package.jpg" alt="Adventure Package" onerror="this.src='https://via.placeholder.com/350x200/32CD32/FFFFFF?text=Adventure+Package'">
+            <div class="package-info">
+                <h3>Adventure Tour</h3>
+                <p>6 Days & 5 Nights</p>
+                <span class="price">$950</span>
+                <ul>
+                    <li>Trekking & Hiking</li>
+                    <li>Water Sports</li>
+                    <li>Jungle Safari</li>
+                    <li>Camping Experience</li>
+                </ul>
+                <button class="package-btn">Book Package</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trending Places -->
+<section class="container">
+    <h2 class="sub-title">Trending Places</h2>
+    <div class="trending">
+        <div class="trending-place" data-place="australia">
+            <img src="images/australia.jpg" alt="Australia" onerror="this.src='https://via.placeholder.com/250x200/00843D/FFFFFF?text=Australia'">
+            <h3>Australia</h3>
+        </div>
+        <div class="trending-place" data-place="japan">
+            <img src="images/japan.jpg" alt="Japan" onerror="this.src='https://via.placeholder.com/250x200/BC002D/FFFFFF?text=Japan'">
+            <h3>Japan</h3>
+        </div>
+        <div class="trending-place" data-place="kashmir">
+            <img src="images/kashmir.jpg" alt="Kashmir" onerror="this.src='https://via.placeholder.com/250x200/87CEEB/FFFFFF?text=Kashmir'">
+            <h3>Kashmir</h3>
+        </div>
+        <div class="trending-place" data-place="maldives">
+            <img src="images/maldives.jpg" alt="Maldives" onerror="this.src='https://via.placeholder.com/250x200/0066CC/FFFFFF?text=Maldives'">
+            <h3>Maldives</h3>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta">
+        <h3>Sharing <br>is Earning Now</h3>
+        <p>Great opportunity to make money by<br> sharing your extra space.</p>
+        <a href="#" class="cta-btn">Know More</a>
+    </div>
+
+    <!-- Travel Stories -->
+    <h2 class="sub-title">Travelers Stories</h2>
+    <div class="stories">
+        <div>
+            <img src="images/story1.jpg" alt="Europe Travel" onerror="this.src='https://via.placeholder.com/300x250/667eea/FFFFFF?text=Europe+Travel'">
+            <p>Popular European countries with a budget of just $10,000</p>
+        </div>
+        <div>
+            <img src="images/story2.jpg" alt="World Travel" onerror="this.src='https://via.placeholder.com/300x250/764ba2/FFFFFF?text=World+Travel'">
+            <p>Traveled more than 100 Countries in less than a year</p>
+        </div>
+        <div>
+            <img src="images/story3.jpg" alt="Australia Travel" onerror="this.src='https://via.placeholder.com/300x250/f093fb/FFFFFF?text=Australia+Travel'">
+            <p>Best experience you get while traveling to Australia</p>
+        </div>
+    </div>
+
+    <a href="#" class="start-btn">Start making money</a>
+
+    <!-- About Section -->
+    <div class="about-msg">
+        <h2>About Tr Travel</h2>
+        <p>Do you love to travel? Are you searching for unique and memorable experiences? Look no further! In this article, we will explore the top ideas for travel experiences that will leave you with lifelong memories. Whether you are an adventure seeker, a food enthusiast, a history buff, or simply seeking relaxation, we have something for everyone. So pack your bags, get ready, and let's embark on an incredible journey!</p>
+    </div>
+</section>
+
+<!-- Search Results Section -->
+<section class="container" id="searchResults" style="display: none;">
+    <h2 class="sub-title">Search Results</h2>
+    <div class="results-container" id="resultsContainer">
+        <!-- Results will be populated by JavaScript -->
+    </div>
+</section>
+
+<!-- Print Booking Section -->
+<section class="container" id="printSection" style="display: none;">
+    <div class="print-header">
+        <h2>Tr Travel - Booking Confirmation</h2>
+        <button onclick="generatePDF()" class="print-btn">
+            <i class="fa-solid fa-print"></i> Print as PDF
+        </button>
+    </div>
+    <div id="printContent">
+        <!-- Print content will be populated here -->
+    </div>
+</section>
+
+<!-- Booking History Section -->
+<section class="container" id="bookingHistorySection" style="display: none;">
+    <div class="history-header">
+        <h2 class="sub-title">Your Booking History</h2>
+        <button onclick="clearAllBookings()" class="clear-btn">
+            <i class="fa-solid fa-trash"></i> Clear All
+        </button>
+    </div>
+    <div class="booking-history" id="bookingHistoryContainer">
+        <!-- Booking history will be populated here -->
+    </div>
+</section>
+
+<!-- Registration Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Create Your Account</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+<!-- Place Details Modal -->
+<div id="placeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="place-details" id="placeDetails">
+            <!-- Content will be populated by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <hr>
+    <p>Copyright @ 2024, Tr Travel.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
